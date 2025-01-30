@@ -1,3 +1,4 @@
+// Assisted by watsonx Code Assistant
 package com.acme.modres;
 
 
@@ -60,7 +61,7 @@ public class AvailabilityCheckerServlet extends HttpServlet {
 			try {
 				t1.start();
 				t1.join();
-				t1.stop(); // Java 21 issue
+				//t1.stop(); // Java 21 issue
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -129,4 +130,13 @@ public class AvailabilityCheckerServlet extends HttpServlet {
 		return -1;
 	}
 
+	public void setStop(boolean stop) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean getStop() {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
